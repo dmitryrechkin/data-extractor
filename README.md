@@ -49,7 +49,6 @@ const extractor = new AiDataExtractor<typeof schema>(aiProvider, aiModel, schema
 
 ```typescript
 const input = 'Hi, my name is John Doe. I would like to book a room for 2024-08-15 from 10:00 AM until 2:00 PM.';
-const expectedResult = { name: 'John Doe', date: '2024-08-15', fromTime: '10:00', toTime: '14:00' };
 
 // Extract data using the AI extractor
 const result = await extractor.extract(input);
